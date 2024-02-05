@@ -51,13 +51,21 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class Main extends Application {
-    public static final int WIDTH = 800;
-    public static final int HEIGHT = 600;
-    Layout layout;
+    public static final int WIDTH = 600;
+    public static final int HEIGHT = 300;
+    private Layout layout;
+    private CafeSim model;
+    private Controller controller;
+
+
     @Override
     public void start(Stage stage) throws IOException {
-        layout = new Layout();
-        stage.setScene(new Scene(new HBox(), WIDTH, HEIGHT));
+        model = new CafeSim();
+        layout = new Layout(model);
+        controller = new Controller(model, layout);
+        layout.setController(controller);
+
+        stage.setScene(new Scene(layout.getRoot(), WIDTH, HEIGHT));
 
         stage.setTitle("Cat Cafe Simulator");
         stage.show();
