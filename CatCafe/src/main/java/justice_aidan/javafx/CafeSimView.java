@@ -10,32 +10,38 @@ import javafx.scene.text.Text;
 public class CafeSimView {
     private GridPane tiles;
 
-    public CafeSimView() {
+    public CafeSimView(int size) {
         tiles = new GridPane();
+        changeSize(size);
+    }
 
-        for (int i = 0; i < 3; i++) {
+    public void changeSize(int size) {
+        tiles.getChildren().clear();
+        tiles.getRowConstraints().clear();
+        tiles.getColumnConstraints().clear();
+
+        for (int i = 0; i < size; i++) {
             RowConstraints rc = new RowConstraints();
             //rc.setFillHeight(true);
             //rc.setVgrow(Priority.ALWAYS);
-            rc.setPercentHeight(100.0/3.0);
+            rc.setPercentHeight(100.0/size);
             tiles.getRowConstraints().add(rc);
         }
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < size; i++) {
             ColumnConstraints cc = new ColumnConstraints();
             //cc.setFillWidth(true);
             //cc.setHgrow(Priority.ALWAYS);
-            cc.setPercentWidth(100.0/3.0);
+            cc.setPercentWidth(100.0/size);
             tiles.getColumnConstraints().add(cc);
         }
 
-        for (int i = 0; i < 9; i++) {
-            Button button = new Button(Integer.toString(i));
+        for (int i = 0; i < size * size; i++) {
+            Button button = new Button("cat");
             button.setMaxWidth(1000000);
             button.setMaxHeight(1000000);
-            tiles.add(button, i % 3, i / 3);
+            tiles.add(button, i % size, i / size);
         }
     }
-
 
     public GridPane getCafeView() {
         return tiles;

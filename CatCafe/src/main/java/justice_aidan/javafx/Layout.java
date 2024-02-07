@@ -1,6 +1,7 @@
 package justice_aidan.javafx;
 
 import javafx.collections.ObservableList;
+import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
@@ -15,10 +16,16 @@ public class Layout implements PropertyChangeListener {
     private Controller controller;
     private CafeSimView view;
     private Button nextWeek;
+    private Button threeGrid;
+    private Button fiveGrid;
+    private Button nineGrid;
     private CafeSim model;
 
+
     public Layout(CafeSim model) {
-        view = new CafeSimView();
+        this.model = model;
+        this.model.addObserver(this);
+        view = new CafeSimView(model.getSize());
 
         root = new BorderPane();
         root.setMaxHeight(Double.MAX_VALUE);
@@ -41,6 +48,7 @@ public class Layout implements PropertyChangeListener {
 
     private VBox makeTopDetails() {
         VBox top = new VBox(5);
+        top.setPadding(new Insets(10));
         top.setAlignment(Pos.CENTER);
         ObservableList<Node> topChildren = top.getChildren();
         topChildren.add(new Text("Week: "));
@@ -53,6 +61,7 @@ public class Layout implements PropertyChangeListener {
 
     private VBox makeLeftDetails() {
         VBox left = new VBox(5);
+        left.setPadding(new Insets(10));
         left.setAlignment(Pos.CENTER);
         ObservableList<Node> leftChildren = left.getChildren();
         leftChildren.add(new Text("Type"));
@@ -65,6 +74,7 @@ public class Layout implements PropertyChangeListener {
 
     private Node makeBottomDetails() {
          VBox bottom = new VBox();
+         bottom.setPadding(new Insets(10));
          bottom.setAlignment(Pos.CENTER);
          ObservableList<Node> rows = bottom.getChildren();
 
@@ -74,6 +84,19 @@ public class Layout implements PropertyChangeListener {
          HBox options = new HBox();
          nextWeek = new Button("Next Week");
          options.getChildren().add(nextWeek);
+         Region spacer = new Region();
+         HBox.setHgrow(spacer, Priority.ALWAYS);
+         options.getChildren().add(spacer);
+
+         options.getChildren().add(new Text("Resize:"));
+         threeGrid = new Button("3x3");
+         fiveGrid = new Button("5x5");
+         nineGrid = new Button("9x9");
+         options.getChildren().add(threeGrid);
+         options.getChildren().add(fiveGrid);
+         options.getChildren().add(nineGrid);
+
+         rows.add(options);
 
          return bottom;
     }
@@ -83,10 +106,26 @@ public class Layout implements PropertyChangeListener {
     }
 
     public void propertyChange(PropertyChangeEvent evt) {
-
+        System.out.println("hello");
+        view.changeSize((Integer) evt.getNewValue());
     }
 
     public Button getNextWeekButton() {
         return nextWeek;
+    }
+
+    public Button getThreeGridButton() {
+        return threeGrid;
+    }
+    public Button getFiveGridButton() {
+        return fiveGrid;
+    }
+    public Button getNineGridButton() {
+        return nineGrid;
+    }
+
+    public void setGridSize(int size) {
+        System.out.println(size);
+        view = new CafeSimView(size);
     }
 }
