@@ -5,6 +5,8 @@ import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
+import javafx.scene.control.RadioButton;
+import javafx.scene.control.ToggleGroup;
 import javafx.scene.layout.*;
 import javafx.scene.text.Text;
 
@@ -73,32 +75,54 @@ public class Layout implements PropertyChangeListener {
     }
 
     private Node makeBottomDetails() {
-         VBox bottom = new VBox();
-         bottom.setPadding(new Insets(10));
-         bottom.setAlignment(Pos.CENTER);
-         ObservableList<Node> rows = bottom.getChildren();
+        VBox bottom = new VBox();
+        bottom.setPadding(new Insets(10));
+        bottom.setAlignment(Pos.CENTER);
+        ObservableList<Node> rows = bottom.getChildren();
 
-         Text temp = new Text("options");
-         rows.add(new Text("options"));
+        rows.add(makeToggleGroup());
 
-         HBox options = new HBox();
-         nextWeek = new Button("Next Week");
-         options.getChildren().add(nextWeek);
-         Region spacer = new Region();
-         HBox.setHgrow(spacer, Priority.ALWAYS);
-         options.getChildren().add(spacer);
+        HBox options = new HBox();
+        nextWeek = new Button("Next Week");
+        options.getChildren().add(nextWeek);
+        Region spacer = new Region();
+        HBox.setHgrow(spacer, Priority.ALWAYS);
+        options.getChildren().add(spacer);
 
-         options.getChildren().add(new Text("Resize:"));
-         threeGrid = new Button("3x3");
-         fiveGrid = new Button("5x5");
-         nineGrid = new Button("9x9");
-         options.getChildren().add(threeGrid);
-         options.getChildren().add(fiveGrid);
-         options.getChildren().add(nineGrid);
+        options.getChildren().add(new Text("Resize:"));
+        threeGrid = new Button("3x3");
+        fiveGrid = new Button("5x5");
+        nineGrid = new Button("9x9");
+        options.getChildren().add(threeGrid);
+        options.getChildren().add(fiveGrid);
+        options.getChildren().add(nineGrid);
+        rows.add(options);
 
-         rows.add(options);
+        return bottom;
+    }
 
-         return bottom;
+    public Node makeToggleGroup() {
+        HBox toggle = new HBox();
+        toggle.setAlignment(Pos.CENTER);
+        ToggleGroup group = new ToggleGroup();
+        RadioButton tableBtn = new RadioButton("Table");
+        RadioButton catBtn = new RadioButton("Cat");
+        RadioButton kittenBtn = new RadioButton("Kitten");
+        RadioButton emptyBtn = new RadioButton("Empty");
+        RadioButton viewBtn = new RadioButton("View");
+        tableBtn.setToggleGroup(group);
+        catBtn.setToggleGroup(group);
+        kittenBtn.setToggleGroup(group);
+        emptyBtn.setToggleGroup(group);
+        viewBtn.setToggleGroup(group);
+        group.selectToggle(viewBtn);
+        toggle.getChildren().add(tableBtn);
+        toggle.getChildren().add(catBtn);
+        toggle.getChildren().add(kittenBtn);
+        toggle.getChildren().add(emptyBtn);
+        toggle.getChildren().add(viewBtn);
+
+        return toggle;
     }
 
     public BorderPane getRoot() {

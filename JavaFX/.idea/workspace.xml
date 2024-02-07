@@ -4,33 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1237eeaf-a35f-4501-b4a8-a2331b03870b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/justice_aidan/javafx/CafeSim.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/justice_aidan/javafx/CafeSimView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/justice_aidan/javafx/Cat.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/justice_aidan/javafx/Controller.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/justice_aidan/javafx/Empty.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/justice_aidan/javafx/FloorArea.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/justice_aidan/javafx/Kitten.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/justice_aidan/javafx/Layout.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/justice_aidan/javafx/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/justice_aidan/javafx/Table.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/justice_aidan/javafx/Tile.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/justice_aidan/javafx/TileView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" />
-    </list>
+    <list default="true" id="1237eeaf-a35f-4501-b4a8-a2331b03870b" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,6 +12,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
@@ -54,7 +31,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/gui-programs/gui-programs/CatCafe",
+    "last_opened_file_path": "C:/Users/101066736/Desktop/4th Year/gui-programs/CatCafe",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
