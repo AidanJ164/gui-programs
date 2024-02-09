@@ -19,4 +19,8 @@ public class FloorArea {
     public void nextWeek() {
 
     }
+
+    public String getName() {
+        return name;
+    }
 }

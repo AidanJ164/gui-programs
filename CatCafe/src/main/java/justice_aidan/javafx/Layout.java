@@ -27,7 +27,7 @@ public class Layout implements PropertyChangeListener {
     public Layout(CafeSim model) {
         this.model = model;
         this.model.addObserver(this);
-        view = new CafeSimView(model.getSize());
+        view = new CafeSimView(model);
 
         root = new BorderPane();
         root.setMaxHeight(Double.MAX_VALUE);
@@ -39,7 +39,7 @@ public class Layout implements PropertyChangeListener {
 
         root.setTop(makeTopDetails());
         root.setLeft(makeLeftDetails());
-        root.setCenter(view.getCafeView());
+        root.setCenter(view);
         root.setBottom(makeBottomDetails());
 
     }
@@ -131,7 +131,7 @@ public class Layout implements PropertyChangeListener {
 
     public void propertyChange(PropertyChangeEvent evt) {
         System.out.println("hello");
-        view.changeSize((Integer) evt.getNewValue());
+        view.makeTiles();
     }
 
     public Button getNextWeekButton() {
@@ -146,10 +146,5 @@ public class Layout implements PropertyChangeListener {
     }
     public Button getNineGridButton() {
         return nineGrid;
-    }
-
-    public void setGridSize(int size) {
-        System.out.println(size);
-        view = new CafeSimView(size);
     }
 }
