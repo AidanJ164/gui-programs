@@ -21,7 +21,10 @@ public class CafeSim {
     }
 
     public void nextWeek() {
-        System.out.println("hi");
+        for (int i = 0; i < tiles.size(); i++) {
+            funds -= tiles.get(i).getWeeklyCost();
+            tiles.get(i).nextWeek();
+        }
     }
 
     public void addObserver(PropertyChangeListener obv) {
@@ -46,5 +49,9 @@ public class CafeSim {
 
     public ArrayList<Tile> getTiles() {
         return tiles;
+    }
+
+    public void buyTile() {
+
     }
 }
