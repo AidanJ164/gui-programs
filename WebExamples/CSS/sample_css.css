@@ -1,0 +1,25 @@
+.centerbox
+{
+	 background-color: lightblue;
+}
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: blue;
+    clear: left;
+    text-align: center;
+}
+
+.highlight {
+    background-color: yellow;
+}
+
+table {
+  border: 1pt solid black;
+  border-collapse: collapse;
+}
+
+td, th {  
+  border: 1pt solid black;
+}

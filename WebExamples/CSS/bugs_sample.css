@@ -1,0 +1,140 @@
+html, body, header, footer, hgroup, nav, article, section, figure, figcaption, h1, h2, h3, ul, li, body, div, p, img {
+   margin: 0;
+   padding: 0;
+   font-size: 100%;
+   vertical-align: baseline;
+   border: 0;
+}
+
+body {
+     background-color: #cccccc;
+}
+
+
+
+h1, h2, h3, nav, footer {
+	font-family: "Arial", sans-serif;
+}
+
+header, footer {
+    background-color: #011c4f;
+    color: #c1a868;
+}
+
+figure, div.box {
+    background-color: white;
+}
+
+header, footer, figure, div.box {
+   width: 80%;
+   margin: 0 10% 1em 10%;
+}
+
+h1 {
+ margin: 0 0 0 0;
+ font-size: 3em;
+ font-style: italic;
+ color: #c1a868;
+ padding-left: 0.166em;
+}
+
+a:link {
+   font-weight: bold;
+   color: #c1a868;
+}
+
+a:visited {
+   color: #c1a868;
+}
+
+a:hover {
+   background-color: #FFFFCC;
+}
+
+nav p {
+  font-size: 0.8em;
+  padding-left: 0.625em;
+  color: white;
+}
+
+header, footer {
+  padding-top: 0.2em;
+  padding-bottom: 0.05em;
+}
+
+
+figure {
+  text-align: center;
+  background-color: white;
+  border: solid 2pt black;
+}
+
+figure img {
+  border: solid 2pt #999999;
+  padding: 0.5em;
+  margin-top: 1em;
+}
+
+div.box {
+  border: solid 2pt black;
+}
+
+div.box h2 {
+  font-size: 1.25em;
+  border-bottom: solid 2pt #c1a868;
+  margin: 0 0 0 0;	
+  color: white;
+  padding-left: 0.4em;
+  background-color: black;
+}
+
+
+div.box p {
+  padding-left: 0.5em;
+  margin: 0 0 0 0;
+}
+
+
+div.box h2 {
+  margin: 0 0 0.5em 0;	
+}
+
+
+
+
+div.box p.actions {
+  background-color: #011c4f; 
+  font-size: 0.8em; 
+  margin-left: 0; 
+  margin-top: 1em; 
+  padding: 0.5em 0 0.5em 0.625em;
+}
+
+div.box p.actions a { 
+  background-color: #555555; 
+  padding: 0.1em 2em 0.1em 2em; 
+  border: solid 1pt #999999; 
+  margin-right: 0.5em;
+}
+
+div.box em {
+  color: #828282;
+}
+
+footer p {
+  margin: 0 0 0 0;
+  font-size: 0.8em;  
+  color: white;  
+  padding-left: 0.625em;
+}
+
+
+#copyright {
+  font-style:italic;
+}
+
+
+
+
+
+

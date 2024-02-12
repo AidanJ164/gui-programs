@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Webstorage</title>
+<script type="text/javascript" 
+      src="webstorage.js"></script>
+</head>
+
+<body>
+<p>Enter two values to add together. The value will save even if the tab is closed if webstorage is permitted.</p>
+<p>
+  <input type="number" id="xValLong" name="xValLong" value="0"> + 
+  <input type="number" id="yValLong" name="yValLong" value="0"> = <span id="answer1">0</span></p>
+  <p>Enter two values to add together. The value will save even if the webpage is changed if webstorage is permitted, but will reset if the tab is closed</p>
+<p>
+  <input type="number" id="xValSession" name="xValSession" value="0"> + 
+  <input type="number" id="yValSession" name="yValSession" value="0"> = <span id="answer2">0</span></p>
+<p id="error"></p>
+<button id="clear">Clear storage</button>
+
+</body>
+</html>
