@@ -2,7 +2,7 @@
  * Author: Aidan Justice
  * Description: This file holds the Cat FloorArea type.
  ******************************************************************************************************************/
-package justice_aidan.javafx;
+package justice_aidan.catcafe;
 
 public class Cat extends FloorArea{
     /*******************************************************************************************************************

@@ -2,7 +2,7 @@
  * Author: Aidan Justice
  * Description: Holds the Kitten FloorArea type.
  ******************************************************************************************************************/
-package justice_aidan.javafx;
+package justice_aidan.catcafe;
 
 public class Kitten extends FloorArea {
 

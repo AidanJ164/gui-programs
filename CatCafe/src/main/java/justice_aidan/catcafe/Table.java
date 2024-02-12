@@ -2,7 +2,7 @@
  * Author: Aidan Justice
  * Description: Holds the Table FloorArea type. Table is the only floor type that has revenue every week.
  ******************************************************************************************************************/
-package justice_aidan.javafx;
+package justice_aidan.catcafe;
 
 public class Table extends FloorArea {
 

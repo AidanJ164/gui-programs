@@ -3,7 +3,7 @@
  * Description: Holds the overall layout of the simulator. It is the main View portion in the MVC pattern. It provides
  * a GUI for the user to interact with the simulator.
  ******************************************************************************************************************/
-package justice_aidan.javafx;
+package justice_aidan.catcafe;
 
 import javafx.collections.ObservableList;
 import javafx.geometry.Pos;
@@ -224,7 +224,7 @@ public class Layout implements PropertyChangeListener {
         try {
             // Load in image from relative path.
             String imageURL = model.getTiles().get(selected).getImageURL();
-            FileInputStream file = new FileInputStream("src/main/java/justice_aidan/javafx/" + imageURL);
+            FileInputStream file = new FileInputStream("src/main/java/justice_aidan/catcafe/" + imageURL);
             Image image = new Image(file);
             infoImage.setImage(image);
         } catch (Exception exception) {

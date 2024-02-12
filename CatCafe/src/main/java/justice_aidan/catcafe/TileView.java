@@ -3,7 +3,7 @@
  * Description: Holds the TileView class. TileView is the observer of Tile. It watches for changes in a tile to update
  * its text whenever a change is made to the Tile.
  ******************************************************************************************************************/
-package justice_aidan.javafx;
+package justice_aidan.catcafe;
 
 import javafx.scene.control.Button;
 import javafx.scene.text.TextAlignment;

@@ -2,7 +2,7 @@
  * Author: Aidan Justice
  * Description: This holds the CafeSimView class. It handles the button grid portion of the layout.
  ******************************************************************************************************************/
-package justice_aidan.javafx;
+package justice_aidan.catcafe;
 
 import javafx.scene.layout.*;
 import java.util.ArrayList;

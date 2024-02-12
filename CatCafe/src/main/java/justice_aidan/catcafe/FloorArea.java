@@ -3,7 +3,7 @@
  * Description: Holds the FloorArea base class. It is the parent class for the other floor types. It describes the
  * information about each tile type like cost, revenue, age, etc.
  ******************************************************************************************************************/
-package justice_aidan.javafx;
+package justice_aidan.catcafe;
 
 public class FloorArea {
     private int totalCost;

@@ -3,7 +3,7 @@
  * Description: This file holds the Controller class. It is the Controller in the MVC Pattern. It creates the event
  * handlers for the simulator buttons.
  ******************************************************************************************************************/
-package justice_aidan.javafx;
+package justice_aidan.catcafe;
 
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;

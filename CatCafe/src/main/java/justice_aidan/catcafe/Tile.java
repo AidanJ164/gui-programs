@@ -3,7 +3,7 @@
  * Description: Holds the Tile Class. Tile is observed by TileView so that information can be displayed to the
  * screen when updated. It holds a FloorArea type.
  ******************************************************************************************************************/
-package justice_aidan.javafx;
+package justice_aidan.catcafe;
 
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;

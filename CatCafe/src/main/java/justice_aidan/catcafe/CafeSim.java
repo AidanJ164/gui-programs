@@ -3,7 +3,7 @@
  * Description: Holds the CafeSim class. This holds all the backend logic of the simulator.
  ******************************************************************************************************************/
 
-package justice_aidan.javafx;
+package justice_aidan.catcafe;
 
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;

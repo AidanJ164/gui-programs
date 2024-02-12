@@ -46,11 +46,10 @@ with your assessment and to deduct points for other issues they may encounter,
 such as errors in the submission process, naming issues, etc.
  */
 
-package justice_aidan.javafx;
+package justice_aidan.catcafe;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
-import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
 
 import java.io.IOException;
