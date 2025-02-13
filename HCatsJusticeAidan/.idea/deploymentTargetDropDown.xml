@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="deploymentTargetDropDown">
+    <value>
+      <entry key="Teir2AllViewsThere (1)">
+        <State />
+      </entry>
+      <entry key="Teir3aStateMachine">
+        <State />
+      </entry>
+      <entry key="Teir3aStateMachine (1)">
+        <State />
+      </entry>
+      <entry key="Tier3e">
+        <State />
+      </entry>
+      <entry key="app">
+        <State>
+          <targetSelectedWithDropDown>
+            <Target>
+              <type value="QUICK_BOOT_TARGET" />
+              <deviceKey>
+                <Key>
+                  <type value="VIRTUAL_DEVICE_PATH" />
+                  <value value="D:\AndroidStudio\Devices\.android\avd\Pixel_2_API_28.avd" />
+                </Key>
+              </deviceKey>
+            </Target>
+          </targetSelectedWithDropDown>
+          <timeTargetWasSelectedWithDropDown value="2024-04-21T20:37:46.868311200Z" />
+        </State>
+      </entry>
+    </value>
+  </component>
+</project>

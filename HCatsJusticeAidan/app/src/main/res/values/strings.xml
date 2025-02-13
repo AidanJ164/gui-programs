@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">HCats Justice Aidan</string>
+    <string name="name">Aidan Justice</string>
+    <string name="title">Herding Cats</string>
+    <string name="reset">Reset</string>
+    <string name="movesText">Moves:</string>
+    <string name="treatsText">Treats:</string>
+    <string name="caughtText">Caught:</string>
+    <string name="treatText">Treat</string>
+    <string name="downText">Down</string>
+    <string name="rightText">Right</string>
+    <string name="floatBlack">Change player color to black.</string>
+    <string name="floatRed">Change player color to red.</string>
+    <string name="floatBlue">Change player color to blue.</string>
+    <string name="floatBurst">Player color floating burst.</string>
+    <string name="floatBackgroundPurple">Set background to purple.</string>
+    <string name="floatBackgroundWhite">Set background to white.</string>
+    <string name="floatBackgroundBurst">Set background burst.</string>
+</resources>
